@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="form.css">
+        <title>Quiz Form</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                
+                <h1 class="header-h1">Registration Form</h1>
+            </header>
+            <p class="header-p">Kindly fill this out with the required information</p>
+            <form action="./documents/web-project" role="">
+                <fieldset>
+                    
+                    <label for="first-name">Enter Your First Name:
+                        <input type="text" required id="first-name" placeholder="enter your first name">
+                    </label>
+                    <label for="last-name">Enter Your Last name:
+                        <input type="text" id="last-name" required placeholder="enter your last name">
+                    </label>
+                    <label for="your-email">Enter Your Email:
+                        <input type="email" required id="your-email" placeholder="eg.abcd.gmail.com">
+                    </label>
+                    <label for="new-password">Create New Password: 
+                        <input id="new-password" type="password" required placeholder="min 8 characters">
+                    </label>
+                </fieldset>
+                <fieldset class="account-name">
+                    <label for="personal">
+                        <input type="radio" name="account-type" id="personal" class="type-account"> Personal Account
+                    </label>
+                    <label for="business">
+                        <input type="radio" name="account-type" id="business"  class="type-account"> Business Account
+                    </label>
+                    <label for="terms-checkbox">
+                        <input type="checkbox" id="terms-checkbox" class="type-account"> I accept the terms and conditions
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="profile-pic"> Upload a profile picture 
+                        <input type="file" id="profile-pic">
+                    </label>
+                    <label for="age"> Input your age (years):
+                        <input type="number" id="age" min="15" max="100">
+                    </label>
+                    <label for="select-option"> How did you hear about us?
+                        <select id="select-option"> 
+                            <option value="">
+                                (select one)
+                            </option>
+                            <option value="1">Social Media</option>
+                            <option value="2">Friends</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </label>
+                    <label> Provide a bio: 
+                        <textarea cols="50" rows="6" placeholder="More about you..."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit"></input>
+            </form>
+            
+        </main>
+    </body>
+</html>
